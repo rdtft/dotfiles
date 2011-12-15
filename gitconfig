@@ -1,0 +1,17 @@
+[user]
+	name = Dmitriy Rybalko
+	email = rdtft@me.com
+
+[color]
+	ui = true
+
+[push]
+	default = tracking
+
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log --graph
