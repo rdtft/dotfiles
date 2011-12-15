@@ -1,0 +1,7 @@
+require 'autotest/growl'
+
+Autotest::Growl::hide_label = true
+
+Autotest.add_hook :initialize do |at|
+  %w{.svn .hg .git vendor}.each {|exception| at.add_exception(exception)}
+end
