@@ -37,4 +37,5 @@ alias md='mkdir -p'
 alias tree='tree -C'
 alias wget='wget --no-check-certificate'
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# use .zshrc.local for settings specific to one system
+[[ -f ~/.zshrc.local ]] && . ~/.zshrc.local
