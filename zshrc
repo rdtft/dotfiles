@@ -1,12 +1,13 @@
 bindkey -e
 
-PROMPT='%# '
+PROMPT='%~ %# '
 
 export LESS=-r
 export PATH="$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
 export PAGER=less
+export CLICOLOR=1
 export EDITOR=vim
 
 HISTFILE=~/.zsh/history
@@ -25,8 +26,11 @@ zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
 
+# disable Ctrl-s
+stty stop undef
+
 alias v=vim
-alias ls='ls -F -G'
+alias g=git
 alias l='ls -l'
 alias ll='ls -la'
 alias md='mkdir -p'
