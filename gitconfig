@@ -9,9 +9,9 @@
 	default = tracking
 
 [alias]
-	st = status
-	ci = commit
-	br = branch
+	s = status -sb
+	b = branch -v
+	l = log --graph --pretty=short
+	d = diff
 	co = checkout
-	df = diff
-	lg = log --graph
+	cm = commit -a

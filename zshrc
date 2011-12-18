@@ -3,14 +3,14 @@ bindkey -e
 PROMPT='%~ %# '
 
 export LESS=-r
-export PATH="$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
 export PAGER=less
 export CLICOLOR=1
 export EDITOR=vim
 
-HISTFILE=~/.zsh/history
+HISTFILE=$HOME/.zsh/history
 HISTSIZE=1000
 SAVEHIST=1000
 
@@ -33,7 +33,7 @@ alias v=vim
 alias g=git
 alias l='ls -l'
 alias ll='ls -la'
-alias md='mkdir -p'
+alias mkdir='mkdir -p'
 alias tree='tree -C'
 alias wget='wget --no-check-certificate'
 
