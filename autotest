@@ -1,6 +1,7 @@
 require 'autotest/growl'
 
 Autotest::Growl::hide_label = true
+Autotest::Growl::clear_terminal = false
 
 Autotest.add_hook :initialize do |at|
   %w{.svn .hg .git vendor}.each {|exception| at.add_exception(exception)}
