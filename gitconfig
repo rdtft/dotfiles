@@ -15,3 +15,5 @@
 	d = diff
 	co = checkout
 	cm = commit -a
+[core]
+	excludesfile = /Users/rdt/.gitignore
