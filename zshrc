@@ -1,4 +1,4 @@
-bindkey -e
+bindkey -v
 
 PROMPT='%~ %# '
 
@@ -25,9 +25,6 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
-
-# disable Ctrl-s
-stty stop undef
 
 alias v=vim
 alias g=git
