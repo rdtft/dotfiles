@@ -3,7 +3,7 @@ bindkey -e
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
-PROMPT='%~ %# '
+PROMPT='%M %~ %# '
 
 export LESS=-r
 export PATH="/usr/local/bin:$PATH"
